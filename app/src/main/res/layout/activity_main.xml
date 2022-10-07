@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/botaoConverter2"
+        android:layout_width="283dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="113dp"
+        android:text="Convert Dolars to Euros"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/campoEuro2"
+        app:layout_constraintTop_toBottomOf="@+id/campoEuro2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:text="Currency Conversion To EURO"
+        app:layout_constraintBottom_toTopOf="@+id/campoLibra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botaoConverter"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="15dp"
+        android:text="Convert Pounds to Euros"
+        app:layout_constraintBottom_toTopOf="@+id/campoDolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoEuro" />
+
+    <EditText
+        android:id="@+id/campoEuro"
+        android:layout_width="319dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Euro"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/botaoConverter"
+        app:layout_constraintEnd_toEndOf="@+id/campoLibra"
+        app:layout_constraintTop_toBottomOf="@+id/campoLibra" />
+
+    <EditText
+        android:id="@+id/campoLibra"
+        android:layout_width="320dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Pound"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/campoEuro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/campoDolar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Dolar"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/campoEuro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoConverter" />
+
+    <EditText
+        android:id="@+id/campoEuro2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Euro"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/botaoConverter2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/campoDolar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
